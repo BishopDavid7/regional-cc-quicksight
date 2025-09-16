@@ -27,4 +27,4 @@ This Udacity Future AWS Business Intelligence Engineer Nanodegree project uses A
 I confirm this submission is my original work. Where official AWS/Udacity examples or documentation were referenced, they were used to inform implementation only, and are acknowledged.
 
 ## Contact
-Pascal Esegemou Ekenya Fonjock — p.fonjock@gmil.com
+Pascal Esegemou Ekenya Fonjock — p.fonjock@gmail.com
