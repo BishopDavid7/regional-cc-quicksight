@@ -1,6 +1,6 @@
 # From College Boards to Dashboards — Regional Community College QuickSight Project
 
-**Author:** Your Full Name  
+**Author:** Pascal Esegemou Ekenya Fonjock  
 **GitHub:** https://github.com/BishopDavid7/regional-cc-quicksight  
 **Project date:** 2025-09-15
 
@@ -27,4 +27,4 @@ This Udacity Future AWS Business Intelligence Engineer Nanodegree project uses A
 I confirm this submission is my original work. Where official AWS/Udacity examples or documentation were referenced, they were used to inform implementation only, and are acknowledged.
 
 ## Contact
-Your Full Name — email@example.com
+Pascal Esegemou Ekenya Fonjock — p.fonjock@gmil.com
