@@ -1,0 +1,14 @@
+{
+  "fileLocations": [
+    {
+      "URIPrefixes": [
+        "s3://RegionalCommunityCollegeBucket/EnrollmentData/"
+      ]
+    }
+  ],
+  "globalUploadSettings": {
+    "textqualifier": "NONE",
+    "delimiter": ",",
+    "containsHeader": "true"
+  }
+}
