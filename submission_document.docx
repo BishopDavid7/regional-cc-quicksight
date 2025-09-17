@@ -1,0 +1,273 @@
+From College Boards to Dashboards Submission Document
+Prepared by: Pascal Esegemou Ekenya Fonjock
+Email: p.fonjock@gmail.com
+Date: 2025-09-15
+________________________________________
+Table of Contents
+(After pasting into Word: References → Table of Contents → choose an Automatic TOC and update.)
+From College Boards to Dashboards — Submission Document	1
+Table of Contents	1
+1. Executive Summary	2
+2. Dataset Preparation Evidence	3
+2.1 Attempt to create dataset from S3 manifest (expected error)	3
+2.2 Created Sample Topic (Student Enrollment Statistics)	3
+2.3 Q - Student Enrollment dataset visible in Datasets	3
+2.4 Dataset refresh schedule (weekly Sunday 12:00 AM, local timezone)	4
+2.5 Dataset add user permission error (fictional email)	4
+2.6 Rename field HomeOfOrigin → NationalOrigin	4
+2.7 Calculated field: Student Type	4
+2.8 Dataset published confirmation	4
+3. Analysis — Visuals Created Using Q	5
+3.1 Visual: Student Majors by Year (initial from Q)	5
+3.2 Visual: Proportion of Student Types (pie)	5
+3.3 (Additional visuals created during extension)	5
+4. Topic & Named Entities	6
+4.1 Delete sample topic and create new Topic	6
+4.2 Topic fields included	6
+4.3 Named Entities & Field Ranking	6
+5. Verified Answers (Q)	7
+5.1 Ask: Which instructors got the best average evaluations? — Mark Verified	7
+5.2 Ask: Which courses are the most expensive? — Correct interpretation and mark Verified	7
+5.3 Verified Questions List (confirm they appear in Verified list)	7
+6. Dashboard — Publish Analysis as Dashboard	7
+6.1 Publish as Student Enrollment Dashboard (Q allowed)	7
+6.2 Test Q&A in dashboard: Which Student Type has higher test scores?	7
+7. Scenarios	8
+7.1 Create Scenario: Improving Student Satisfaction Without Increasing Costs	8
+7.2 Scenario thread — follow-up prompts and iterative exploration	8
+8. Extend Analysis (four new visuals) & Republish Dashboard	8
+8.1 Professors with best average evaluations	8
+8.2 Courses with best average evaluations	8
+8.3 Professors with highest average course costs	8
+8.4 Courses with highest average course costs	9
+9. Recreate Scenario with all visuals & finalize thread	9
+10. Data Story — Create & Polish	9
+10.1 Use Q to auto-generate an initial Data Story; improve with custom text blocks and visuals	9
+11. Listings of All Created Resources (for submission)	10
+12. Methodology (brief)	10
+13. Originality Statement	10
+
+
+
+
+
+
+
+
+
+
+
+
+1. Executive Summary
+This project examines student enrollment, course costs, and professor evaluation scores to identify opportunities to improve student satisfaction without raising course costs. We used Amazon QuickSight (Q + Topics + Dashboards + Scenarios + Data Story) to: create a dataset, build visuals using Q, configure a Topic with Named Entities and Verified Questions, publish a dashboard, develop a scenario to explore the central business question, and create a final data story with recommendations.
+
+2. Dataset Preparation Evidence
+2.1 Attempt to create dataset from S3 manifest (expected error)
+•	Action: Attempted to create dataset using manifest s3://RegionalCommunityCollegeBucket/EnrollmentData/EnrollmentManifest.json.
+•	Result: Error — fictional bucket; dataset creation cancelled.
+Screenshot:
+[Insert screenshot: screenshots/01_attempt_s3_manifest_error.png]
+Image URL: https://i.postimg.cc/3WzYjYPb/01-attempt-s3-manifest-error-png.png
+Caption: Attempt to create dataset from fictional S3 manifest (expected error).
+Recommended alt text: "Attempt to create dataset from fictional S3 manifest showing error."
+
+2.2 Created Sample Topic (Student Enrollment Statistics)
+Screenshot:
+[Insert screenshot: screenshots/02_sample_topic_creation_in_progress.png]
+Image URL: https://i.postimg.cc/zyrNMpDC/02-sample-topic-creation-in-progress-png02-sample-topic-creation-in-progress-png.png
+Caption: Sample Topic creation in progress.
+
+2.3 Q - Student Enrollment dataset visible in Datasets
+[Insert screenshot: screenshots/03_dataset_list_q_student_enrollment.png]
+URL: https://i.postimg.cc/kVjd2mQs/03-dataset-list-q-student-enrollment-png.png
+Caption: Q - Student Enrollment dataset visible in Datasets.
+2.4 Dataset refresh schedule (weekly Sunday 12:00 AM, local timezone)
+[Insert screenshot: screenshots/04_dataset_refresh_schedule.png]
+URL: https://i.postimg.cc/3yrTrRvW/04-dataset-refresh-schedule-png.png
+Caption: Weekly refresh schedule set to Sunday 12:00 AM (timezone visible).
+
+2.5 Dataset add user permission error (fictional email)
+[Insert screenshot: screenshots/05_dataset_add_user_error.png]
+URL: https://i.postimg.cc/rDNTLWzv/05-dataset-add-user-error-png.png
+Caption: Error when adding fictional user admissions@regionalcommunity.edu.
+
+2.6 Rename field HomeOfOrigin → NationalOrigin
+[Insert screenshot: screenshots/06_rename_homeoforigin_to_nationalorigin.png]
+URL: https://i.postimg.cc/2bMRx7XB/06-rename-homeoforigin-to-nationalorigin-png.png
+Caption: Field HomeOfOrigin renamed to NationalOrigin with description: "Country of Residence on admission application".
+
+2.7 Calculated field: Student Type
+Formula:
+ifelse({Age} < 30, "Youth", "Adult Continuing Education")
+[Insert screenshot: screenshots/07_student_type_calculated_field.png]
+URL: https://i.postimg.cc/47mRtSwg/07-student-type-calculated-field-png.png
+Caption: Calculated field Student Type defined using ifelse on Age.
+
+2.8 Dataset published confirmation
+[Insert screenshot: screenshots/08_dataset_published_q_student_enrollment.png]
+URL: https://i.postimg.cc/BPFW7Pd7/08-dataset-published-q-student-enrollment-png.png
+Caption: Q - Student Enrollment dataset published.
+
+3. Analysis — Visuals Created Using Q
+3.1 Visual: Student Majors by Year (initial from Q)
+•	Prompt used: “Show the number of students in each major, grouped by their academic year.”
+•	Actions taken: Renamed to Student Majors by Year, resized chart, removed comma separators from AcademicYear, reconfigured to vertical bar chart using Edit with Q.
+[Insert screenshot: screenshots/09_visual_student_majors_by_year_initial.png]
+URL: https://i.postimg.cc/YhcBG8W5/09-visual-student-majors-by-year-initial-png.png
+Caption: Visual created by Q — initial version.
+[Insert screenshot: screenshots/10_academicyear_no_commas.png]
+URL: https://i.postimg.cc/Yh1K1gNh/10-academicyear-no-commas-png.png
+Caption: AcademicYear formatted to remove commas.
+[Insert screenshot: screenshots/11_student_majors_by_year_vertical_bar.png]
+URL: https://i.postimg.cc/qN4fQRQQ/11-student-majors-by-year-vertical-bar-png.png
+Caption: Visual reconfigured to vertical bar chart.
+
+3.2 Visual: Proportion of Student Types (pie)
+•	Prompt used: “Pie chart of Student Types.”
+•	Actions taken: Renamed to Proportion of Student Types, resized legend and chart.
+[Insert screenshot: screenshots/12_proportion_of_student_types_pie.png]
+URL: https://i.postimg.cc/rdwBXPBr/12-proportion-of-student-types-pie-png.png
+Caption: Proportion of Student Types (pie chart).
+
+3.3 (Additional visuals created during extension)
+•	Professors with best average evaluations.
+•	Courses with best average evaluations.
+•	Professors with highest average course costs.
+•	Courses with highest average course costs.
+[Insert four screenshots here for the four visuals]
+(example image URLs below relate to these visuals)
+•	Professors best eval: https://i.postimg.cc/5YqKXqWV/28-vis-prof-best-eval-png.png (screenshots/28_vis_prof_best_eval.png)
+•	Courses best eval: https://i.postimg.cc/dZsHrkJT/29-vis-courses-best-eval-png.png (screenshots/29_vis_courses_best_eval.png)
+•	Professors highest cost: https://i.postimg.cc/ThfHZSnY/30-vis-prof-highest-cost-png.png (screenshots/30_vis_prof_highest_cost.png)
+•	Courses highest cost: https://i.postimg.cc/t7kmy5zd/31-vis-courses-highest-cost-png.png (screenshots/31_vis_courses_highest_cost.png)
+
+4. Topic & Named Entities
+4.1 Delete sample topic and create new Topic
+•	Topic Name: Regional Community College Student Data
+•	Description: Q&A environment for understanding student enrollment data.
+[Insert screenshot: screenshots/14_delete_sample_topic.png]
+URL: https://i.postimg.cc/f3Sv97XP/14-delete-sample-topic-png.png
+Caption: Deleted sample topic.
+[Insert screenshot: screenshots/15_creating_topic_progress.png]
+URL: https://i.postimg.cc/Vr3ptLdq/15-creating-topic-progress-png.png
+Caption: Creating topic progress.
+4.2 Topic fields included
+The following dataset fields were added to the Topic:
+Student Type, NationalOrigin, Gender, StudentClassification, Course, Grade, TestScore, Semester, CourseId, Professor, Credit, CostPerCourse, EvaluationScore, StudentName, StudentId, AcademicYear, EnrollmentDate, GraduationDate, Major, Age.
+[Insert screenshot: screenshots/16_topic_fields_list.png]
+URL: https://i.postimg.cc/DmXtTsMB/16-topic-fields-list-png.png
+Caption: Topic field list includes required fields.
+4.3 Named Entities & Field Ranking
+Student Details — Field ranking: Student Name, Semester, Course, Test Score, Grade, Student Classification, Student Type, Major, Gender, NationalOrigin, Credit, Enrollment Date, Graduation Date, Student Id.
+[Insert screenshot: screenshots/17_topic_entities_student_details.png]
+URL: https://i.postimg.cc/21cHv8t1/17-topic-entities-student-details-png.png
+Course Details — Field ranking: Course, Professor, Cost per Course, Academic Year, Semester, Course Id.
+[Insert screenshot: screenshots/18_topic_entities_course_details.png]
+URL: https://i.postimg.cc/hJX20RFp/18-topic-entities-course-details-png.png
+Professor Evaluation — Field ranking: Professor, Course, Semester, Academic Year, Student Name, Evaluation Score.
+[Insert screenshot: screenshots/19_topic_entities_prof_eval.png]
+URL: https://i.postimg.cc/qtWjbD40/19-topic-entities-prof-eval-png.png
+
+5. Verified Answers (Q)
+5.1 Ask: Which instructors got the best average evaluations? — Mark Verified
+[Insert screenshot: screenshots/20_q_best_instructors_verified.png]
+URL: https://i.postimg.cc/HcG94J9k/20-q-best-instructors-verified-png.png
+Caption: Verified Q answer: Best instructors.
+5.2 Ask: Which courses are the most expensive? — Correct interpretation and mark Verified
+[Insert screenshot: screenshots/21_q_courses_most_expensive_verified.png]
+URL: https://i.postimg.cc/wyhcW6wc/21-q-courses-most-expensive-verified-png.png
+Caption: Verified Q answer: Most expensive courses (corrected if necessary).
+5.3 Verified Questions List (confirm they appear in Verified list)
+[Insert screenshot: screenshots/22_q_verified_questions_list.png]
+URL: https://i.postimg.cc/bZBTrVGb/22-q-verified-questions-list-png.png
+Caption: List of Verified questions in the Topic.
+
+6. Dashboard — Publish Analysis as Dashboard
+6.1 Publish as Student Enrollment Dashboard (Q allowed)
+[Insert screenshot: screenshots/23_publish_dashboard_q_enabled.png]
+URL: https://i.postimg.cc/xNnGhW7r/23-publish-dashboard-q-enabled-png.png
+Caption: Student Enrollment Dashboard published with Q enabled.
+6.2 Test Q&A in dashboard: Which Student Type has higher test scores?
+[Insert screenshot: screenshots/24_dashboard_q_test_scores_by_student_type.png]
+URL: https://i.postimg.cc/PNjBdNnH/24-dashboard-q-test-scores-by-student-type-png.png
+Caption: Dashboard Q&A test result.
+
+7. Scenarios
+7.1 Create Scenario: Improving Student Satisfaction Without Increasing Costs
+•	Data selected: Student Majors by Year & Proportion of Student Types (initial two visuals)
+•	Starter question: “How do we improve professor evaluations, while avoiding an increase in cost per course?”
+[Insert screenshot: screenshots/25_scenario_create_select_visuals.png]
+URL: https://i.postimg.cc/3yGcTQLW/25-scenario-create-select-visuals-png.png
+Caption: Scenario creation — select visuals.
+[Insert screenshot: screenshots/26_scenario_starter.png]
+URL: https://i.postimg.cc/yDtbt8yw/26-scenario-starter-png.png
+Caption: Starter question entered.
+7.2 Scenario thread — follow-up prompts and iterative exploration
+[Insert screenshot: screenshots/27_scenario_thread_followups.png]
+URL: https://i.postimg.cc/vgdS82jh/27-scenario-thread-followups-png.png
+Caption: Scenario thread showing follow-ups.
+
+8. Extend Analysis (four new visuals) & Republish Dashboard
+8.1 Professors with best average evaluations
+[Insert screenshot: screenshots/28_vis_prof_best_eval.png]
+URL: https://i.postimg.cc/5YqKXqWV/28-vis-prof-best-eval-png.png
+8.2 Courses with best average evaluations
+[Insert screenshot: screenshots/29_vis_courses_best_eval.png]
+URL: https://i.postimg.cc/dZsHrkJT/29-vis-courses-best-eval-png.png
+8.3 Professors with highest average course costs
+[Insert screenshot: screenshots/30_vis_prof_highest_cost.png]
+URL: https://i.postimg.cc/ThfHZSnY/30-vis-prof-highest-cost-png.png
+8.4 Courses with highest average course costs
+[Insert screenshot: screenshots/31_vis_courses_highest_cost.png]
+URL: https://i.postimg.cc/t7kmy5zd/31-vis-courses-highest-cost-png.png
+Republish Dashboard (replace existing):
+[Insert screenshot: screenshots/32_publish_dashboard_replaced.png]
+URL: https://i.postimg.cc/fJbqb9HG/32-publish-dashboard-replaced-png.png
+Caption: Dashboard republished replacing the original.
+
+9. Recreate Scenario with all visuals & finalize thread
+[Insert screenshot: screenshots/33_scenario_recreated_all_visuals.png]
+URL: https://i.postimg.cc/dLSHZVpL/33-scenario-recreated-all-visuals-png.png
+[Insert screenshot: screenshots/34_scenario_thread_full.png]
+URL: https://i.postimg.cc/yDMLnrVK/34-scenario-thread-full-png.png
+[Insert screenshot: screenshots/35_scenario_thread_recommendation.png]
+URL: https://i.postimg.cc/DSJCrK35/35-scenario-thread-recommendation-png.png
+Caption: Scenario thread culminating in recommendation.
+
+10. Data Story — Create & Polish
+10.1 Use Q to auto-generate an initial Data Story; improve with custom text blocks and visuals
+Include visuals in story:
+•	Student Majors by Year
+•	Proportion of Student Types
+•	Average EvaluationScore by Course
+•	Average CostPerCourse by Course
+[Insert screenshot: (Data Story cover with Prepared by and story pages)]
+(If you have separate screenshots for Data Story cover/page1/page2, insert them here.)
+Data Story text (example):
+Executive summary: This story explores how professor effectiveness (EvaluationScore) relates to course costs and enrollment. We identify best practice professors who earn high evaluation scores at moderate or low cost, and low-cost courses with poor evaluations that would benefit most from targeted interventions.
+Recommendations (from story):
+1.	Pilot instructor development program for low-cost/low-eval courses.
+2.	Document and scale teaching practices from high-eval/low-cost professors.
+3.	Use QuickSight weekly refresh to monitor impact.
+
+11. Listings of All Created Resources (for submission)
+•	Datasets: Q - Student Enrollment (published)
+•	Analyses: Student Enrollment Analysis
+•	Dashboards: Student Enrollment Dashboard (initial & replaced)
+•	Topics: Regional Community College Student Data
+•	Scenarios: Improving Student Satisfaction Without Increasing Costs (initial & recreated)
+•	Data Story: From College Boards to Dashboards
+[Insert screenshot: (list of resources or AWS QuickSight Home showing resources)]
+
+12. Methodology (brief)
+1.	Use QuickSight sample dataset & Q to create visuals quickly.
+2.	Prepare dataset: rename fields, create calculated fields, set refresh schedule.
+3.	Create Topic, define named entities and verify Q answers.
+4.	Build Analysis with Q-powered visuals; refine formatting and titles.
+5.	Publish Analysis as Dashboard with Q enabled.
+6.	Build Scenarios and iterate with follow-up questions until recommendation emerges.
+7.	Generate Data Story, refine narrative, and add Prepared by.
+
+13. Originality Statement
+I confirm this submission is my original work. Any referenced AWS or Udacity documentation is cited in the README.
+o	
