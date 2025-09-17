@@ -1,18 +1,33 @@
-# Verified Q answers — questions we marked Verified in the Topic
+# ✅ Verified Q Answers — Questions Marked as Verified in the Topic
 
-- Q: Which instructors got the best average evaluations?
-  - Verified Answer: [Professor Jill (78.63) ]
-  Formula
-avgOver({EvaluationScore}, [Professor], PRE_AGG)
-Description: Average evaluation score, grouped by Professor.
-Use case: Bar charts that rank professors by their average evaluation.
-  - Screenshot: [url=https://postimg.cc/HcG94J9k][img]https://i.postimg.cc/HcG94J9k/20-q-best-instructors-verified-png.png[/img][/url]
-  - Notes: Confirmed avg calculation uses EvaluationScore and groups by Professor.
+---
 
-- Q: Which courses are the most expensive (average CostPerCourse)?
-  - Verified Answer: [Course X (Cost 420), Course Y (Cost 380), Course Z (Cost 350)]
-  - Screenshot: screenshots/21_q_courses_most_expensive_verified.png
+### Q: Which instructors got the best average evaluations?
+- **Verified Answer:** Professor Jill — *Average Evaluation Score: 78.63*  
+- **Notes:** Confirmed calculation uses `EvaluationScore` aggregated by `Professor`.  
 
-- Q: Which Student Type has higher test scores?
-  - Verified Answer: [Youth — avg TestScore 78.4; Adult Continuing Education — avg 73.2]
-  - Screenshot: screenshots/24_dashboard_q_test_scores_by_student_type.png
+<div align="center">
+  <img src="https://i.postimg.cc/HcG94J9k/20-q-best-instructors-verified-png.png" alt="Best Instructors Verified Answer" width="800">
+</div>
+
+---
+
+### Q: Which courses are the most expensive (average CostPerCourse)?
+- **Verified Answer:** Big Data X — *Average Cost: $2,692.58*  
+
+<div align="center">
+  <img src="https://i.postimg.cc/wyhcW6wc/21-q-courses-most-expensive-verified-png.png" alt="Most Expensive Courses Verified Answer" width="800">
+</div>
+
+---
+
+### Q: Which Student Type has higher test scores?
+- **Verified Answer:**  
+  - Youth — *Average Test Score: 78.4*  
+  - Adult Continuing Education — *Average Test Score: 73.2*  
+
+<div align="center">
+  <img src="https://i.postimg.cc/PNjBdNnH/24-dashboard-q-test-scores-by-student-type-png.png" alt="Test Scores by Student Type Verified Answer" width="800">
+</div>
+
+---
