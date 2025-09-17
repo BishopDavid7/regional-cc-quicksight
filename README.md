@@ -23,31 +23,34 @@
       text-decoration: underline;
     }
     .screenshot {
-      margin: 20px 0;
+      margin: 30px 0;
       border: 1px solid #ddd;
-      border-radius: 6px;
-      padding: 10px;
+      border-radius: 8px;
+      padding: 12px;
       background: #fff;
       text-align: center;
     }
     .screenshot img {
-      max-width: 100%;
-      border-radius: 4px;
+      width: 95%; /* make images bigger */
+      max-width: 1200px; /* cap max size for clarity */
+      height: auto;
+      border-radius: 6px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
     hr {
       border: none;
       border-top: 1px solid #ccc;
-      margin: 40px 0;
+      margin: 50px 0;
     }
     ul, ol {
-      margin-left: 20px;
+      margin-left: 25px;
     }
     footer {
-      margin-top: 40px;
-      font-size: 0.9em;
+      margin-top: 50px;
+      font-size: 0.95em;
       color: #555;
       border-top: 1px solid #ddd;
-      padding-top: 10px;
+      padding-top: 15px;
     }
   </style>
 </head>
