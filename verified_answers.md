@@ -1,8 +1,12 @@
 # Verified Q answers — questions we marked Verified in the Topic
 
 - Q: Which instructors got the best average evaluations?
-  - Verified Answer: [Professor A (88.4), Professor B (87.1), Professor C (86.9)]
-  - Screenshot: screenshots/20_q_best_instructors_verified.png
+  - Verified Answer: [Professor Jill (78.63) ]
+  Formula
+avgOver({EvaluationScore}, [Professor], PRE_AGG)
+Description: Average evaluation score, grouped by Professor.
+Use case: Bar charts that rank professors by their average evaluation.
+  - Screenshot: [url=https://postimg.cc/HcG94J9k][img]https://i.postimg.cc/HcG94J9k/20-q-best-instructors-verified-png.png[/img][/url]
   - Notes: Confirmed avg calculation uses EvaluationScore and groups by Professor.
 
 - Q: Which courses are the most expensive (average CostPerCourse)?
