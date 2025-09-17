@@ -1,78 +1,69 @@
-# 📊 From College Boards to Dashboards — Regional Community College QuickSight Project
+# From College Boards to Dashboards — Regional Community College QuickSight Project
 
 **Author:** Pascal Esegemou Ekenya Fonjock  
-**GitHub:** [BishopDavid7/regional-cc-quicksight](https://github.com/BishopDavid7/regional-cc-quicksight)  
+**GitHub:** [regional-cc-quicksight](https://github.com/BishopDavid7/regional-cc-quicksight)  
 **Project date:** 2025-09-15  
 
 ---
 
-## 📝 Project Summary
-This project was developed as part of the **Udacity Future AWS Business Intelligence Engineer Nanodegree**.  
-It leverages **Amazon QuickSight (Q)** to analyze *student enrollment, course costs, and professor evaluations* at a fictional Regional Community College.  
+## 📌 Project Summary
+This Udacity **Future AWS Business Intelligence Engineer Nanodegree** project uses **Amazon QuickSight (Q)** to analyze **student enrollment and course evaluation data**.  
 
-The final deliverables demonstrate:
-- Dataset preparation and enrichment  
-- QuickSight Topics with natural language queries (Q Prompts)  
-- Interactive analysis visuals  
-- A business Scenario with guided reasoning  
-- A Data Story tailored to inform the **Board of Directors**  
+Deliverables include:  
+- Dataset preparation  
+- QuickSight Topics & Q prompts  
+- Interactive visuals  
+- A Scenario analysis  
+- A complete Data Story targeted to the Board of Directors  
 
-📌 **Key Question:**  
-*How can we improve professor evaluations while avoiding increases in course costs?*
+![Dashboard Preview](https://github.com/BishopDavid7/regional-cc-quicksight/blob/main/screenshots/dashboard_overview.png?raw=true)
 
 ---
 
-## 📂 Repository Contents
-
-| File / Folder | Description |
-|---------------|-------------|
-| `submission_document.docx` | **Primary artifact** — contains all labeled screenshots of dataset, visuals, dashboard, topic entities, verified answers, scenario, and data story. |
-| `dataset_fields.md` | Dataset schema with fields, data types, and descriptions. |
-| `calculated_fields.md` | Calculated field definitions (e.g., **Student Type** formula). |
-| `Q_prompts.md` | Natural language prompts used with Amazon Q. |
-| `verified_answers.md` | List of **Verified answers** added to the Topic. |
-| `scenario_thread.md` | Business Scenario starter question and full reasoning thread. |
-| `data_story.md` | Final data story narrative including visuals. |
-| `manifest_sample.json` | Example S3 manifest file used in dataset import demonstration. |
-| `screenshots/` | Directory with all supporting screenshots. Each file is labeled for reference in the submission document. |
+## 📂 Repo Contents
+- **`submission_document.docx`** — Word file with labeled screenshots (primary submission artifact).  
+- **`dataset_fields.md`** — dataset schema (fields, types, descriptions).  
+- **`calculated_fields.md`** — calculated field definitions and QuickSight formulas.  
+- **`Q_prompts.md`** — all natural language prompts used with Amazon Q.  
+- **`verified_answers.md`** — the Verified answers list and descriptions.  
+- **`scenario_thread.md`** — scenario starter and thread.  
+- **`data_story.md`** — final data story narrative and visuals list.  
+- **`manifest_sample.json`** — example S3 manifest used to demonstrate the failed S3 dataset import.  
+- **`screenshots/`** — folder with all screenshots named and referenced in `submission_document.docx`.  
 
 ---
 
-## 🖼️ Example Visuals  
+## 🛠️ How to Reproduce
+1. Sign in to **Amazon QuickSight Enterprise** with **Q enabled**.  
+2. Open the stock sample dataset: **Student Enrollment Statistics**.  
+3. Follow the dataset preparation, calculated fields, and analysis steps outlined in:  
+   - `submission_document.docx`  
+   - `calculated_fields.md`  
+   - `Q_prompts.md`  
 
-### Student Majors by Year  
-![Student Majors by Year](screenshots/student_majors_by_year.png)  
-
-### Proportion of Student Types  
-![Proportion of Student Types](screenshots/proportion_student_types.png)  
-
-### Average Evaluation Score by Course  
-![Avg Evaluation Score](screenshots/avg_eval_by_course.png)  
-
-### Average Cost per Course  
-![Avg Cost per Course](screenshots/avg_cost_by_course.png)  
+Example of calculated field formula screenshot:  
+![Calculated Field Example](https://github.com/BishopDavid7/regional-cc-quicksight/blob/main/screenshots/calculated_field_student_type.png?raw=true)
 
 ---
 
-## ⚙️ How to Reproduce  
+## 📊 Sample Visuals
+- Enrollment trends by semester  
+  ![Enrollment Trend](https://github.com/BishopDavid7/regional-cc-quicksight/blob/main/screenshots/enrollment_trend.png?raw=true)  
 
-1. **Sign in** to Amazon QuickSight Enterprise with Q enabled.  
-2. **Load dataset**: Use the sample dataset *Student Enrollment Statistics* (since the provided S3 manifest is fictional).  
-3. **Follow instructions**: Steps are fully documented in `submission_document.docx`.  
-4. **Use provided resources**:  
-   - Prompts: `Q_prompts.md`  
-   - Calculated fields: `calculated_fields.md`  
-   - Scenario thread: `scenario_thread.md`  
+- Course evaluation ratings  
+  ![Course Evaluation](https://github.com/BishopDavid7/regional-cc-quicksight/blob/main/screenshots/course_evaluation.png?raw=true)  
 
----
-
-## ✅ Originality Statement  
-I confirm this submission is my **original work**. Where official AWS/Udacity examples or documentation were referenced, they were used only for learning purposes and are properly acknowledged.  
+- Student type distribution  
+  ![Student Type Distribution](https://github.com/BishopDavid7/regional-cc-quicksight/blob/main/screenshots/student_type_distribution.png?raw=true)  
 
 ---
 
-## 📬 Contact  
-**Pascal Esegemou Ekenya Fonjock**  
-📧 p.fonjock@gmail.com  
+## ✅ Originality Statement
+I confirm this submission is my **original work**.  
+Where official AWS/Udacity examples or documentation were referenced, they were used **only for guidance**, and are properly acknowledged.  
 
 ---
+
+## 📬 Contact
+Pascal Esegemou Ekenya Fonjock  
+📧 Email: **p.fonjock@gmail.com**  
