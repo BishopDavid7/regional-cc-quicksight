@@ -1,69 +1,148 @@
-# From College Boards to Dashboards — Regional Community College QuickSight Project
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>From College Boards to Dashboards — Regional Community College QuickSight Project</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      margin: 40px;
+      background: #f9fafc;
+      color: #222;
+    }
+    h1, h2, h3 {
+      color: #2c3e50;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .screenshot {
+      margin: 20px 0;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 10px;
+      background: #fff;
+      text-align: center;
+    }
+    .screenshot img {
+      max-width: 100%;
+      border-radius: 4px;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #ccc;
+      margin: 40px 0;
+    }
+    ul, ol {
+      margin-left: 20px;
+    }
+    footer {
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #555;
+      border-top: 1px solid #ddd;
+      padding-top: 10px;
+    }
+  </style>
+</head>
+<body>
 
-**Author:** Pascal Esegemou Ekenya Fonjock  
-**GitHub:** [regional-cc-quicksight](https://github.com/BishopDavid7/regional-cc-quicksight)  
-**Project date:** 2025-09-15  
+  <h1>From College Boards to Dashboards — Regional Community College QuickSight Project</h1>
 
----
+  <p><strong>Author:</strong> Pascal Esegemou Ekenya Fonjock<br>
+     <strong>GitHub:</strong> <a href="https://github.com/BishopDavid7/regional-cc-quicksight" target="_blank">regional-cc-quicksight</a><br>
+     <strong>Project date:</strong> 2025-09-15</p>
 
-## 📌 Project Summary
-This Udacity **Future AWS Business Intelligence Engineer Nanodegree** project uses **Amazon QuickSight (Q)** to analyze **student enrollment and course evaluation data**.  
+  <hr>
 
-Deliverables include:  
-- Dataset preparation  
-- QuickSight Topics & Q prompts  
-- Interactive visuals  
-- A Scenario analysis  
-- A complete Data Story targeted to the Board of Directors  
+  <h2>📌 Project Summary</h2>
+  <p>This Udacity <strong>Future AWS Business Intelligence Engineer Nanodegree</strong> project uses 
+     <strong>Amazon QuickSight (Q)</strong> to analyze <strong>student enrollment and course evaluation data</strong>.</p>
 
-![Dashboard Preview](https://github.com/BishopDavid7/regional-cc-quicksight/blob/main/screenshots/dashboard_overview.png?raw=true)
+  <p>Deliverables include:</p>
+  <ul>
+    <li>Dataset preparation</li>
+    <li>QuickSight Topics & Q prompts</li>
+    <li>Interactive visuals</li>
+    <li>A Scenario analysis</li>
+    <li>A complete Data Story targeted to the Board of Directors</li>
+  </ul>
 
----
+  <div class="screenshot">
+    <img src="https://i.postimg.cc/3WzYjYPb/01-attempt-s3-manifest-error-png.png" alt="Dashboard Preview">
+  </div>
 
-## 📂 Repo Contents
-- **`submission_document.docx`** — Word file with labeled screenshots (primary submission artifact).  
-- **`dataset_fields.md`** — dataset schema (fields, types, descriptions).  
-- **`calculated_fields.md`** — calculated field definitions and QuickSight formulas.  
-- **`Q_prompts.md`** — all natural language prompts used with Amazon Q.  
-- **`verified_answers.md`** — the Verified answers list and descriptions.  
-- **`scenario_thread.md`** — scenario starter and thread.  
-- **`data_story.md`** — final data story narrative and visuals list.  
-- **`manifest_sample.json`** — example S3 manifest used to demonstrate the failed S3 dataset import.  
-- **`screenshots/`** — folder with all screenshots named and referenced in `submission_document.docx`.  
+  <hr>
 
----
+  <h2>📂 Repo Contents</h2>
+  <ul>
+    <li><strong>submission_document.docx</strong> — Word file with labeled screenshots (primary submission artifact).</li>
+    <li><strong>dataset_fields.md</strong> — dataset schema (fields, types, descriptions).</li>
+    <li><strong>calculated_fields.md</strong> — calculated field definitions and QuickSight formulas.</li>
+    <li><strong>Q_prompts.md</strong> — all natural language prompts used with Amazon Q.</li>
+    <li><strong>verified_answers.md</strong> — the Verified answers list and descriptions.</li>
+    <li><strong>scenario_thread.md</strong> — scenario starter and thread.</li>
+    <li><strong>data_story.md</strong> — final data story narrative and visuals list.</li>
+    <li><strong>manifest_sample.json</strong> — example S3 manifest used to demonstrate the failed S3 dataset import.</li>
+    <li><strong>screenshots/</strong> — folder with all screenshots referenced in <code>submission_document.docx</code>.</li>
+  </ul>
 
-## 🛠️ How to Reproduce
-1. Sign in to **Amazon QuickSight Enterprise** with **Q enabled**.  
-2. Open the stock sample dataset: **Student Enrollment Statistics**.  
-3. Follow the dataset preparation, calculated fields, and analysis steps outlined in:  
-   - `submission_document.docx`  
-   - `calculated_fields.md`  
-   - `Q_prompts.md`  
+  <hr>
 
-Example of calculated field formula screenshot:  
-![Calculated Field Example](https://github.com/BishopDavid7/regional-cc-quicksight/blob/main/screenshots/calculated_field_student_type.png?raw=true)
+  <h2>🛠️ How to Reproduce</h2>
+  <ol>
+    <li>Sign in to <strong>Amazon QuickSight Enterprise</strong> with <strong>Q enabled</strong>.</li>
+    <li>Open the stock sample dataset: <strong>Student Enrollment Statistics</strong>.</li>
+    <li>Follow dataset preparation, calculated fields, and analysis steps outlined in:
+      <ul>
+        <li><code>submission_document.docx</code></li>
+        <li><code>calculated_fields.md</code></li>
+        <li><code>Q_prompts.md</code></li>
+      </ul>
+    </li>
+  </ol>
 
----
+  <div class="screenshot">
+    <img src="https://i.postimg.cc/47mRtSwg/07-student-type-calculated-field-png.png" alt="Calculated Field Example">
+  </div>
 
-## 📊 Sample Visuals
-- Enrollment trends by semester  
-  ![Enrollment Trend](https://github.com/BishopDavid7/regional-cc-quicksight/blob/main/screenshots/enrollment_trend.png?raw=true)  
+  <hr>
 
-- Course evaluation ratings  
-  ![Course Evaluation](https://github.com/BishopDavid7/regional-cc-quicksight/blob/main/screenshots/course_evaluation.png?raw=true)  
+  <h2>📊 Sample Visuals</h2>
 
-- Student type distribution  
-  ![Student Type Distribution](https://github.com/BishopDavid7/regional-cc-quicksight/blob/main/screenshots/student_type_distribution.png?raw=true)  
+  <div class="screenshot">
+    <img src="https://i.postimg.cc/YhcBG8W5/09-visual-student-majors-by-year-initial-png.png" alt="Enrollment Trend">
+  </div>
 
----
+  <div class="screenshot">
+    <img src="https://i.postimg.cc/dZsHrkJT/29-vis-courses-best-eval-png.png" alt="Course Evaluation">
+  </div>
 
-## ✅ Originality Statement
-I confirm this submission is my **original work**.  
-Where official AWS/Udacity examples or documentation were referenced, they were used **only for guidance**, and are properly acknowledged.  
+  <div class="screenshot">
+    <img src="https://i.postimg.cc/rdwBXPBr/12-proportion-of-student-types-pie-png.png" alt="Student Type Distribution">
+  </div>
 
----
+  <hr>
 
-## 📬 Contact
-Pascal Esegemou Ekenya Fonjock  
-📧 Email: **p.fonjock@gmail.com**  
+  <h2>✅ Originality Statement</h2>
+  <p>I confirm this submission is my <strong>original work</strong>.<br>
+     Where official AWS/Udacity examples or documentation were referenced, they were used <strong>only for guidance</strong>, and are properly acknowledged.</p>
+
+  <hr>
+
+  <h2>📬 Contact</h2>
+  <p>Pascal Esegemou Ekenya Fonjock<br>
+     📧 Email: <a href="mailto:p.fonjock@gmail.com">p.fonjock@gmail.com</a></p>
+
+  <footer>
+    <p>&copy; 2025 Pascal Esegemou Ekenya Fonjock — Regional Community College QuickSight Project</p>
+  </footer>
+
+</body>
+</html>
